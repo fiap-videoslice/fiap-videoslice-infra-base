@@ -59,7 +59,7 @@ jobs:
           ./utils/create-dyndb-table.sh ${{ inputs.TF_LOCK_TABLE_NAME }}
 
       - name: Setup Terraform
-      - uses: hashicorp/setup-terraform@v2
+        uses: hashicorp/setup-terraform@v2
 
       - name: Terraform Init
         run: |
