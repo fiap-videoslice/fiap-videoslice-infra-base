@@ -49,8 +49,7 @@ jobs:
       - name: Create TF-Backend S3 Bucket
         run: |
           pwd
-          ls -la
-          ls -la ../
+          ls -la utils          
           chmod +x ./utils/create-s3-bucket.sh
           ./utils/create-s3-bucket.sh ${{ inputs.TF_STATE_BUCKET_NAME }}
 
